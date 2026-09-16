@@ -53,7 +53,7 @@ embarked_code = embarked[0]  # "S", "C", or "Q"
 
 # ---------- Build feature row matching training columns ----------
 # Model expects: ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare', 'Sex_encoded', 'S', 'C', 'Q']
-sex_encoded = 1 if sex == "male" else 0
+sex_encoded = 0 if sex == "male" else 1
 
 input_df = pd.DataFrame(
     [{
